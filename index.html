@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashwar Pastry - حلواني فشور</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ================= NAVBAR START ================= -->
+    <header class="navbar-wrapper">
+        <nav class="navbar">
+       
+            <a href="#" class="logo">
+                <img src="images/ChatGPT Image Aug 5, 2026, 03_57_28 AM.png" alt="Fashwar Pastry Logo" onerror="this.src='https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=100&auto=format&fit=crop'">
+                <span class="logo-text">Fashwar <span>Pastry</span></span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#" class="active"><i class="fa-solid fa-house"></i> الرئيسية</a></li>
+                
+                <li class="dropdown">
+                    <a href="#menu">المنيو<i class="fa-solid fa-chevron-down text-xs"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#menu"><i class="fa-solid fa-cake-candles"></i> تورتات</a></li>
+                        <li><a href="#menu"><i class="fa-solid fa-cookie-bite"></i> حلويات شرقيه</a></li>
+                        <li><a href="#menu"><i class="fa-solid fa-ice-cream"></i> حلويات غربيه</a></li>
+                        <li><a href="#menu"><i class="fa-solid fa-bread-slice"></i> المخبوزات</a></li>
+                        <li><a href="#menu"><i class="fa-solid fa-box"></i> نواشف و بسكويت</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">حسابي <i class="fa-solid fa-chevron-down text-xs"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><i class="fa-solid fa-box-archive"></i> طلباتي (Orders)</a></li>
+                        <li><a href="#"><i class="fa-solid fa-location-dot"></i> العناوين (Addresses)</a></li>
+                        <li><a href="#"><i class="fa-solid fa-user-gear"></i> تفاصيل الحساب</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="cart-icon-btn" id="cart-toggle-btn">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <span class="cart-badge" id="cart-count">0</span>
+                </button>
+                <a href="#menu" class="btn-primary-glow">
+                    <span>اطلب الآن</span>
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- ================= NAVBAR END ================= -->
+
+    <!-- ================= HERO SECTION START ================= -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="badge-tag">
+                    <i class="fa-solid fa-crown text-amber-400"></i> طعم الفخامة الأصلي
+                </div>
+                <h1 class="hero-title">عالم من <span>الحلويات والتورت</span> المصنوعة بشغف وحب</h1>
+                <p class="hero-description">
+                    في حلواني <strong>Fashwar Pastry</strong> نبتكر أشهى المخبوزات، التورت الميني والشرقيات بأجود المكونات الطازجة لتجعل كل لحظة من مناسباتك ذكرى لا تُنسى.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn-main">
+                        <i class="fa-solid fa-utensils"></i> استكشف المنيو الكامل
+                    </a>
+                    <a href="#offers" class="btn-outline">
+                        <i class="fa-solid fa-fire"></i> العروض الحصرية
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">+15</span>
+                        <span class="stat-text">عام خبرة</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-text">مكونات طبيعية</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">⚡ 30</span>
+                        <span class="stat-text">دقيقة توصيل</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image-wrapper">
+                <div class="glow-bg"></div>
+                <img src="images/ChatGPT Image Aug 5, 2026, 04_56_09 AM.png" alt="Fashwar Pastry Showcase" class="hero-img" onerror="this.src='https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?w=700&auto=format&fit=crop'">
+                <div class="floating-badge">
+                    <i class="fa-solid fa-star text-amber-400"></i>
+                    <div>
+                        <strong>4.9 / 5.0</strong>
+                        <p>تقييم أكثر من 5,000 عميل</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================= HERO SECTION END ================= -->
+
+    <!-- ================= PRODUCTS SECTION START ================= -->
+    <section class="product-section" id="menu">
+        <div class="section-header">
+            <span class="sub-title">منيو التورت والمخبوزات</span>
+            <h2 class="main-title">الأكثر مبيعاً ومفضلة لدى عملائنا</h2>
+        </div>
+
+        <div class="product-grid">
+
+            <div class="product-card">
+                <div class="card-image">
+                    <span class="tag">ميني</span>
+                    <img src="images/109.webp" alt="تورته لوتس" onerror="this.src='https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&auto=format&fit=crop'">
+                </div>
+                <div class="card-content">
+                    <h3 class="product-title">تورته لوتس</h3>
+                    <p class="product-desc">طبقات البسكويت الذهبية وغزل زبدة اللوتس</p>
+                    <div class="card-footer">
+                        <span class="price">320.00 EGP</span>
+                        <button class="product-button" onclick="addToCart('تورته لوتس ميني', 320)">
+                            <i class="fa-solid fa-plus"></i> إضافة
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="card-image">
+                    <span class="tag">ميني</span>
+                    <img src="images/تورتة-نوتيلا-ميني-220-2.webp" alt="تورته نوتيلا" onerror="this.src='https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?w=400&auto=format&fit=crop'">
+                </div>
+                <div class="card-content">
+                    <h3 class="product-title">تورته نوتيلا</h3>
+                    <p class="product-desc">شوكولاتة نوتيلا فاخرة غنية مع البندق</p>
+                    <div class="card-footer">
+                        <span class="price">320.00 EGP</span>
+                        <button class="product-button" onclick="addToCart('تورته نوتيلا ميني', 320)">
+                            <i class="fa-solid fa-plus"></i> إضافة
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="card-image">
+                    <span class="tag">ميني</span>
+                    <img src="images/0001745_-_550.webp" alt="تورته فراوله" onerror="this.src='https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&auto=format&fit=crop'">
+                </div>
+                <div class="card-content">
+                    <h3 class="product-title">تورته فراوله</h3>
+                    <p class="product-desc">فراولة طازجة وكريمة خفيفة متناسقة</p>
+                    <div class="card-footer">
+                        <span class="price">320.00 EGP</span>
+                        <button class="product-button" onclick="addToCart('تورته فراوله ميني', 320)">
+                            <i class="fa-solid fa-plus"></i> إضافة
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="card-image">
+                    <span class="tag">ميني</span>
+                    <img src="images/57-copy.webp" alt="تورته نص و نص" onerror="this.src='https://images.unsplash.com/photo-1535141192574-5d4897c13136?w=400&auto=format&fit=crop'">
+                </div>
+                <div class="card-content">
+                    <h3 class="product-title">تورته نص و نص</h3>
+                    <p class="product-desc">المزيج المثالي بين الشوكولاتة والفانيليا</p>
+                    <div class="card-footer">
+                        <span class="price">320.00 EGP</span>
+                        <button class="product-button" onclick="addToCart('تورته نص و نص ميني', 320)">
+                            <i class="fa-solid fa-plus"></i> إضافة
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="card-image">
+                    <span class="tag">ميني</span>
+                    <img src="images/82285-طريقة-عمل-تورتة-الفواكه-(1).jpg" alt="تورته فواكه" onerror="this.src='https://images.unsplash.com/photo-1519869325930-281384150729?w=400&auto=format&fit=crop'">
+                </div>
+                <div class="card-content">
+                    <h3 class="product-title">تورته فواكه</h3>
+                    <p class="product-desc">تشكيلة فواكه الموسم الطازجة مع الكريمة</p>
+                    <div class="card-footer">
+                        <span class="price">320.00 EGP</span>
+                        <button class="product-button" onclick="addToCart('تورته فواكه ميني', 320)">
+                            <i class="fa-solid fa-plus"></i> إضافة
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="card-image">
+                    <span class="tag">ميني</span>
+                    <img src="images/c7526ed15b4389760247a9a6bcc1476f.jpg" alt="تورته شوكلت" onerror="this.src='https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&auto=format&fit=crop'">
+                </div>
+                <div class="card-content">
+                    <h3 class="product-title">تورته شوكلت</h3>
+                    <p class="product-desc">غنية بالدارك شوكليت الخام وعصارة الكاكاو</p>
+                    <div class="card-footer">
+                        <span class="price">320.00 EGP</span>
+                        <button class="product-button" onclick="addToCart('تورته شوكلت ميني', 320)">
+                            <i class="fa-solid fa-plus"></i> إضافة
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ================= PRODUCTS SECTION END ================= -->
+
+    <!-- ================= FOOTER START ================= -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="logo">
+                    <img src="images/ChatGPT Image Aug 5, 2026, 03_57_28 AM.png" alt="Fashwar Pastry" onerror="this.src='https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=100&auto=format&fit=crop'">
+                    <span class="logo-text">Fashwar <span>Pastry</span></span>
+                </div>
+                <p>نعد الحلويات بتفاصيل الشغف، لنمنحكم طعماً يصنع البسمة في كل أوقاتكم ومناسباتكم.</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>الأقسام</h3>
+                <a href="#">تورتات <span>14</span></a>
+                <a href="#">حلويات شرقية <span>18</span></a>
+                <a href="#">حلويات غربية <span>44</span></a>
+                <a href="#">مخبوزات <span>23</span></a>
+                <a href="#">نواشف و بسكويت <span>17</span></a>
+            </div>
+
+            <div class="footer-box">
+                <h3>خدمة العملاء</h3>
+                <a href="#">لوحة التحكم (Dashboard)</a>
+                <a href="#">الطلبات (Orders)</a>
+                <a href="#">العناوين (Addresses)</a>
+                <a href="#">تفاصيل الحساب</a>
+                <a href="#">استعادة كلمة المرور</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Made with ❤️ 2026 Fashwar Pastry. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+    <!-- ================= FOOTER END ================= -->
+
+    <!-- ================= CART SIDEBAR ================= -->
+    <!-- <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3><i class="fa-solid fa-basket-shopping"></i> سلة المشتريات</h3>
+            <button id="close-cart" class="close-btn">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <p class="empty-msg">السلة فارغة حالياً. اضف بعض الحلويات!</p>
+        </div>
+        <div class="cart-footer">
+            <div class="total-price">
+                <span>الإجمالي:</span>
+                <strong id="cart-total">0.00 EGP</strong>
+            </div>
+            <button class="checkout-btn" onclick="checkout()">إتمام الطلب الآن</button>
+        </div>
+    </div> -->
+
+    <!-- Script File -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashwar Pastry</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <img src="images/ChatGPT Image Aug 5, 2026, 03_57_28 AM.png" alt="">
+        </a>
+        <ul>
+            <li class="dropdown">
+                <a href="#">حسابي ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Orders</a></li>
+                    <li><a href="#">Adresses</a></li>
+                    <li><a href="#">Account details</a></li>
+                </ul>
+            </li>
+        </ul>
+         <li class="dropdown">
+                <a href="#">المنيو ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">المخبوزات</a></li>
+                    <li><a href="#">نواشف و بسكويت</a></li>
+                    <li><a href="#">تورتات</a></li>
+                    <li><a href="#">حلويات شرقيه</a></li>
+                    <li><a href="#">حلويات غربيه</a></li>
+                </ul>
+            </li>        
+    </nav> 
+
+    <div class="img">
+        <img src="images/ChatGPT Image Aug 5, 2026, 04_56_09 AM.png" alt="">
+
+    </div>
+
+    <section class="product">
+
+    <div class="product-card">
+        <img src="images/109.webp" alt="">
+        <h2>تورته لوتس</h2>
+        <h2>ميني</h2>
+        <p>320,00 EGB</p>
+        <button class="product-button">شراء</button>
+    </div>
+
+    <div class="product-card">
+        <img src="images/تورتة-نوتيلا-ميني-220-2.webp" alt="">
+        <h2>تورته نوتيلا</h2>
+        <h2>ميني</h2>
+        <p>320,00 EGB</p>
+        <button class="product-button">شراء</button>
+    </div>
+
+    <div class="product-card">
+        <img src="images/0001745_-_550.webp" alt="">
+        <h2>تورته فراوله</h2>
+        <h2>ميني</h2>
+        <p>320,00 EGB</p>
+        <button class="product-button">شراء</button>
+    </div>
+
+    <div class="product-card">
+        <img src="images/57-copy.webp" alt="">
+        <h2>تورته نص و نص</h2>
+        <h2>ميني</h2>
+        <p>320,00 EGB</p>
+        <button class="product-button">شراء</button>
+    </div>
+
+    <div class="product-card">
+        <img src="images/82285-طريقة-عمل-تورتة-الفواكه-(1).jpg" alt="">
+        <h2>تورته فواكه</h2>
+        <h2>ميني</h2>
+        <p>320,00 EGB</p>
+        <button class="product-button">شراء</button>
+    </div>
+
+    <div class="product-card">
+        <img src="images/c7526ed15b4389760247a9a6bcc1476f.jpg" alt="">
+        <h2>تورته شوكلت</h2>
+        <h2>ميني</h2>
+        <p>320,00 EGB</p>
+        <button class="product-button">شراء</button>
+    </div>
+
+    </section>
+
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="footer-box">
+            <h3>الأقسام</h3>
+
+            <a href="#">تورتات <span>14</span></a>
+            <a href="#">حلويات شرقية <span>18</span></a>
+            <a href="#">حلويات غربية <span>44</span></a>
+            <a href="#">مخبوزات <span>23</span></a>
+            <a href="#">نواشف و بسكويت <span>17</span></a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Customer service</h3>
+
+            <a href="#">Dashboard</a>
+            <a href="#">Orders</a>
+            <a href="#">Downloads</a>
+            <a href="#">Addresses</a>
+            <a href="#">Account details</a>
+            <a href="#">Lost password</a>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p>Made with love 2026 Fashwar</p> 
+
+<!-- </footer> -->
+
+
+<!-- <p> id-"text"Hello World </p>
+
+<h2> Hello World </h2>
+
+<h3 class="sub-title"> sub title </h3>
+
+
+<button></button>
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <script src="js/scripts.js"></script>
+</body>
+</html>
